@@ -3,7 +3,7 @@
 A JS DSL for rendering HTML on the client or the server.
 
 ## Introduction
-The JS HTML Renderer provides a concise syntax for writing HTML using JavaScript.  You can use the JS HTML Renderer to create a static template and inject dynamic content into it.  JS Symbols are used in order to designate where dynamic content will be inserted.
+The JS HTML Renderer provides a concise syntax for writing HTML using JavaScript.  You can use the the Renderer in order to create a static template and inject dynamic content into it.  JS [Symbols](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) are used in order to designate where dynamic content will be inserted.
 
 ### Features
 - An intuitive and concise syntax.
@@ -93,7 +93,7 @@ import { $ } from "js-html-renderer";
 ```ts
 const my_custom_element = $.bind(null, 'my-custom-element');
 ```
-### Render the custom element with the class name `custom-element` and string "Hello, World!" for content and log it to the console.
+### Render the custom element with the class name `custom-element` and the string "Hello, World!" for content and log it to the console.
 ```ts
 console.log(my_custom_element({ class: 'custom-element' })('Hello, World!').render());
 // <my-custom-element class="custom-element">Hello, World!</my-custom-element>
