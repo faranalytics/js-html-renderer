@@ -3,7 +3,7 @@
 A JS DSL for rendering HTML on the client or the server.
 
 ## Introduction
-The JS HTML Renderer provides a concise syntax for writing HTML using JavaScript.  You can create a static template and inject dynamic content into it.  JS Symbols are used in order to designate where dynamic content will be inserted.
+The JS HTML Renderer provides a concise syntax for writing HTML using JavaScript.  You can use the JS HTML Renderer to create a static template and inject dynamic content into it.  JS Symbols are used in order to designate where dynamic content will be inserted.
 
 ### Features
 - An intuitive and concise syntax.
