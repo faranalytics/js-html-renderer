@@ -5,9 +5,9 @@ type Nodes = Array<string | Template | symbol | typeof Template.prototype.collec
 
 export class Template {
 
-    private startTag: string;
-    private endTag: string;
-    private children?: Array<unknown>;
+    protected startTag: string;
+    protected endTag: string;
+    protected children?: Array<unknown>;
 
     constructor(name: string, attr?: { [key: string]: string }) {
         this.children = [];
