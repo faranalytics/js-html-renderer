@@ -75,7 +75,7 @@ const greetings = ul({ id: 'greetings' })(
 );
 ```
 ### Inject the dynamic content and render the HTML.
-Use `template.render` in order to inject the unordered HTML list of `greetings` created above into the template.
+You use `template.render` in order to inject the unordered HTML list of `greetings` created above into the template.
 ```ts
 const htmlText = template.render(
     {
