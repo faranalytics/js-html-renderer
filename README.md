@@ -260,3 +260,180 @@ http.createServer((req: http.IncomingMessage, res: http.ServerResponse) => {
     }
 }).listen(3000);
 ```
+#### Output
+# Greetings from Around the World!
+- Saluton, Mondo!
+- Hello Wêreld!
+- Përshendetje Botë!
+- ሰላም ልዑል!
+- مرحبا بالعالم!
+- Բարեւ աշխարհ!
+- Kaixo Mundua!
+- Прывітанне Сусвет!
+- ওহে বিশ্ব!
+- Здравей свят!
+- Hola món!
+- Moni Dziko Lapansi!
+- 你好世界！
+- Pozdrav svijete!
+- Ahoj světe!
+- Hej Verden!
+- Hallo Wereld!
+- Hello World!
+- Tere maailm!
+- Hei maailma!
+- Bonjour monde!
+- Hallo wrâld!
+- გამარჯობა მსოფლიო!
+- Hallo Welt!
+- Γειά σου Κόσμε!
+- Sannu Duniya!
+- שלום עולם!
+- नमस्ते दुनिया!
+- Helló Világ!
+- Halló heimur!
+- Ndewo Ụwa!
+- Halo Dunia!
+- Ciao mondo!
+- こんにちは世界！
+- Сәлем Әлем!
+- សួស្តី​ពិភពលោក!
+- Салам дүйнө!
+- ສະ​ບາຍ​ດີ​ຊາວ​ໂລກ!
+- Sveika pasaule!
+- Labas pasauli!
+- Moien Welt!
+- Здраво свету!
+- Hai dunia!
+- ഹലോ വേൾഡ്!
+- Сайн уу дэлхий!
+- မင်္ဂလာပါကမ္ဘာလောက!
+- नमस्कार संसार!
+- Hei Verden!
+- سلام نړی!
+- سلام دنیا!
+- Witaj świecie!
+- Olá Mundo!
+- ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ ਦੁਨਿਆ!
+- Salut Lume!
+- Привет мир!
+- Hàlo a Shaoghail!
+- Здраво Свете!
+- Lefatše Lumela!
+- හෙලෝ වර්ල්ඩ්!
+- Pozdravljen svet!
+- ¡Hola Mundo!
+- Halo Dunya!
+- Salamu Dunia!
+- Hej världen!
+- Салом Ҷаҳон!
+- สวัสดีชาวโลก!
+- Selam Dünya!
+- Привіт Світ!
+- Salom Dunyo!
+- Chào thế giới!
+- Helo Byd!
+- Molo Lizwe!
+- העלא וועלט!
+- Mo ki O Ile Aiye!
+- Sawubona Mhlaba!
+
+#### The rendered HTML (formatted for clarity):
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title id="title">The Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./script.js"></script>
+    <script>function sayHello() {
+            alert('Hello, World!');
+        }</script>
+</head>
+<body>
+    <main id="main-content">
+        <section onClick="sayHello();">
+            <h1>Greetings from Around the World!</h1>
+            <ul id="content">
+                <li id="greeting-0" class="greetings">Saluton, Mondo!</li>
+                <li id="greeting-1" class="greetings">Hello Wêreld!</li>
+                <li id="greeting-2" class="greetings">Përshendetje Botë!</li>
+                <li id="greeting-3" class="greetings">ሰላም ልዑል!</li>
+                <li id="greeting-4" class="greetings">مرحبا بالعالم!</li>
+                <li id="greeting-5" class="greetings">Բարեւ աշխարհ!</li>
+                <li id="greeting-6" class="greetings">Kaixo Mundua!</li>
+                <li id="greeting-7" class="greetings">Прывітанне Сусвет!</li>
+                <li id="greeting-8" class="greetings">ওহে বিশ্ব!</li>
+                <li id="greeting-9" class="greetings">Здравей свят!</li>
+                <li id="greeting-10" class="greetings">Hola món!</li>
+                <li id="greeting-11" class="greetings">Moni Dziko Lapansi!</li>
+                <li id="greeting-12" class="greetings">你好世界！</li>
+                <li id="greeting-13" class="greetings">Pozdrav svijete!</li>
+                <li id="greeting-14" class="greetings">Ahoj světe!</li>
+                <li id="greeting-15" class="greetings">Hej Verden!</li>
+                <li id="greeting-16" class="greetings">Hallo Wereld!</li>
+                <li id="greeting-17" class="greetings">Hello World!</li>
+                <li id="greeting-18" class="greetings">Tere maailm!</li>
+                <li id="greeting-19" class="greetings">Hei maailma!</li>
+                <li id="greeting-20" class="greetings">Bonjour monde!</li>
+                <li id="greeting-21" class="greetings">Hallo wrâld!</li>
+                <li id="greeting-22" class="greetings">გამარჯობა მსოფლიო!</li>
+                <li id="greeting-23" class="greetings">Hallo Welt!</li>
+                <li id="greeting-24" class="greetings">Γειά σου Κόσμε!</li>
+                <li id="greeting-25" class="greetings">Sannu Duniya!</li>
+                <li id="greeting-26" class="greetings">שלום עולם!</li>
+                <li id="greeting-27" class="greetings">नमस्ते दुनिया!</li>
+                <li id="greeting-28" class="greetings">Helló Világ!</li>
+                <li id="greeting-29" class="greetings">Halló heimur!</li>
+                <li id="greeting-30" class="greetings">Ndewo Ụwa!</li>
+                <li id="greeting-31" class="greetings">Halo Dunia!</li>
+                <li id="greeting-32" class="greetings">Ciao mondo!</li>
+                <li id="greeting-33" class="greetings">こんにちは世界！</li>
+                <li id="greeting-34" class="greetings">Сәлем Әлем!</li>
+                <li id="greeting-35" class="greetings">សួស្តី​ពិភពលោក!</li>
+                <li id="greeting-36" class="greetings">Салам дүйнө!</li>
+                <li id="greeting-37" class="greetings">ສະ​ບາຍ​ດີ​ຊາວ​ໂລກ!</li>
+                <li id="greeting-38" class="greetings">Sveika pasaule!</li>
+                <li id="greeting-39" class="greetings">Labas pasauli!</li>
+                <li id="greeting-40" class="greetings">Moien Welt!</li>
+                <li id="greeting-41" class="greetings">Здраво свету!</li>
+                <li id="greeting-42" class="greetings">Hai dunia!</li>
+                <li id="greeting-43" class="greetings">ഹലോ വേൾഡ്!</li>
+                <li id="greeting-44" class="greetings">Сайн уу дэлхий!</li>
+                <li id="greeting-45" class="greetings">မင်္ဂလာပါကမ္ဘာလောက!</li>
+                <li id="greeting-46" class="greetings">नमस्कार संसार!</li>
+                <li id="greeting-47" class="greetings">Hei Verden!</li>
+                <li id="greeting-48" class="greetings">سلام نړی!</li>
+                <li id="greeting-49" class="greetings">سلام دنیا!</li>
+                <li id="greeting-50" class="greetings">Witaj świecie!</li>
+                <li id="greeting-51" class="greetings">Olá Mundo!</li>
+                <li id="greeting-52" class="greetings">ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ ਦੁਨਿਆ!</li>
+                <li id="greeting-53" class="greetings">Salut Lume!</li>
+                <li id="greeting-54" class="greetings">Привет мир!</li>
+                <li id="greeting-55" class="greetings">Hàlo a Shaoghail!</li>
+                <li id="greeting-56" class="greetings">Здраво Свете!</li>
+                <li id="greeting-57" class="greetings">Lefatše Lumela!</li>
+                <li id="greeting-58" class="greetings">හෙලෝ වර්ල්ඩ්!</li>
+                <li id="greeting-59" class="greetings">Pozdravljen svet!</li>
+                <li id="greeting-60" class="greetings">¡Hola Mundo!</li>
+                <li id="greeting-61" class="greetings">Halo Dunya!</li>
+                <li id="greeting-62" class="greetings">Salamu Dunia!</li>
+                <li id="greeting-63" class="greetings">Hej världen!</li>
+                <li id="greeting-64" class="greetings">Салом Ҷаҳон!</li>
+                <li id="greeting-65" class="greetings">สวัสดีชาวโลก!</li>
+                <li id="greeting-66" class="greetings">Selam Dünya!</li>
+                <li id="greeting-67" class="greetings">Привіт Світ!</li>
+                <li id="greeting-68" class="greetings">Salom Dunyo!</li>
+                <li id="greeting-69" class="greetings">Chào thế giới!</li>
+                <li id="greeting-70" class="greetings">Helo Byd!</li>
+                <li id="greeting-71" class="greetings">Molo Lizwe!</li>
+                <li id="greeting-72" class="greetings">העלא וועלט!</li>
+                <li id="greeting-73" class="greetings">Mo ki O Ile Aiye!</li>
+                <li id="greeting-74" class="greetings">Sawubona Mhlaba!</li>
+            </ul>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+</body>
+</html>
+```

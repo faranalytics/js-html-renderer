@@ -62,7 +62,7 @@ export class Template {
                                 const result: unknown = value();
                                 if (result instanceof Template) {
                                     // This *was* a `collect` function that had not been invoked; hence, it doesn't have any children (e.g., <br>).  Add just its `startTag`. 
-                                    this.addPart(result.startTag);
+                                    children[i] = result.startTag;
                                 }
                                 else {
                                     throw new NotImplementedError(`The function ${value.toString()} returned an unhandled type.`);
