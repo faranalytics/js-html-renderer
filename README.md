@@ -127,7 +127,7 @@ console.log(htmlText);
 ```
 ## Performance
 ### Prerendering
-HTML is prerendered at the time the `Template` is created.  The HTML elements are concatenated into a string separated by just the Symbolic dynamic components of the `Template`.  
+HTML is prerendered at the time the `Template` is created.  The HTML elements are concatenated into a string separated by just the dynamic components of the `Template` i.e., the parts represented by JavaScript Symbols.  
 
 For example, in the `Template` below, all the HTML elements, including the `footer`, are prerendered at the time of `Template` creation.  This means that the `Template` may be reused without having to reconstruct the HTML elements that comprise it at each use.
 
