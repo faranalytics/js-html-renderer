@@ -13,7 +13,7 @@ const template: Template = doctype()(
 
         ),
         body()(
-            main({ id: 'main' })(
+            main({ id: 'main-content' })(
                 $greetings
             )
         )

@@ -13,7 +13,7 @@ const template: Template = doctype()(
         head()(
         ),
         body()(
-            main({ id: 'main' })(
+            main({ id: 'main-content' })(
                 $greetings // Dynamic content may be injected wherever there is a Symbol.
             )
         )
@@ -56,7 +56,7 @@ const template: Template = doctype()(
         head()(
         ),
         body()(
-            main({ id: 'main' })(
+            main({ id: 'main-content' })(
                 $greetings
             )
         )
