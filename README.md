@@ -3,7 +3,7 @@
 A JS DSL for rendering HTML on the client or the server.
 
 ## Introduction
-The JS HTML Renderer provides a concise and intuitive syntax for writing HTML using JavaScript.  You can use the Renderer in order to create a static template and inject dynamic content into it.  JS [Symbols](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) are used in order to designate where dynamic content will be inserted.
+The JS HTML Renderer provides a concise and intuitive syntax for writing HTML using JavaScript.  You can use the Renderer in order to create a static `Template` and inject dynamic content into it.  JS [Symbols](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) are used in order to designate where dynamic content will be inserted.
 
 The Renderer's syntax is intuitive and concise e.g.,
 
@@ -59,7 +59,7 @@ import { Template, doctype, html, head, body, main, ul, li } from "js-html-rende
 ```ts
 const $greetings = Symbol('greetings');
 ```
-### Create an HTML template.
+### Create an HTML `Template`.
 You will use the Symbol created above in order to designate where dynamic content will be inserted.
 ```ts
 const template: Template = doctype()(
@@ -96,7 +96,7 @@ const greetings = ul({ id: 'greetings' })(
 </ul>
 ```
 ### Inject the dynamic content and render the HTML.
-You use `template.render` in order to inject the unordered HTML list of `greetings` created above into the template.
+You use `template.render` in order to inject the unordered HTML list of `greetings` created above into the `Template`.
 ```ts
 const htmlText = template.render(
     {
@@ -126,7 +126,7 @@ console.log(htmlText);
 ```
 ## Performance
 ### Prerendering
-HTML is prerendered at the time the Template is created.  The HTML elements are concatenated into a string separated by just the Symbolic dynamic components of the Template.  For example, in the Template below, all the HTML elements, including the `footer`, are prerendered at the time of Template creation.  This means that the Template may be reused without having to reconstruct the HTML elements that comprise it at each use.
+HTML is prerendered at the time the `Template` is created.  The HTML elements are concatenated into a string separated by just the Symbolic dynamic components of the `Template`.  For example, in the `Template` below, all the HTML elements, including the `footer`, are prerendered at the time of `Template` creation.  This means that the `Template` may be reused without having to reconstruct the HTML elements that comprise it at each use.
 
 The final render step, invoked using the `template.render` method, involves just a final concatenation of the prerenderd HTML and the dynamic content.
 
