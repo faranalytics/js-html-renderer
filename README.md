@@ -41,6 +41,7 @@ const template: Template = doctype()(
 - [Usage](#usage)
 - [Performance](#performance)
 - [Custom HTML Tags](#custom-html-tags)
+- [Hello, World! Example](#hello-world-example)
 
 ## Installation
 
@@ -55,7 +56,7 @@ In this example you will create an HTML document that contains greetings in Espe
 ```ts
 import { Template, doctype, html, head, body, main, ul, li } from "js-html-renderer";
 ```
-### Create Symbols for dynamic content.
+### Create a `Symbol` variable for dynamic content.
 ```ts
 const $greetings = Symbol('greetings');
 ```
@@ -167,4 +168,40 @@ console.log(my_custom_element({ class: 'custom-element' })('Hello, World!').rend
 ##### Output
 ```html
 <my-custom-element class="custom-element">Hello, World!</my-custom-element>
+```
+## "Hello, World!" Example
+
+In this example you will create an HTTP server that listens on port 3000 and serves dynamic content.  This example is based on the `Usage` example shown above.
+
+### Import Node's native HTTP server, the `Template` type, and relevant HTML tags.
+```ts
+import * as http from "node:http";
+import { Template, doctype, html, head, title, script, link, body, main, ul, li, footer } from "js-html-renderer";
+```
+
+### Create the `Symbol` variables and `Template`.
+The 
+```ts
+const $main_content = Symbol('main_content');
+const $title = Symbol('title');
+const $script = Symbol('script');
+const $inline_script = Symbol('inline_script');
+const $style_sheet = Symbol('style_sheet');
+
+const template: Template = doctype()(
+    html()(
+        head()(
+            $title,
+            $style_sheet,
+            $script,
+            $inline_script
+        ),
+        body()(
+            main({ id: 'main-content' })(
+                $main_content
+            ),
+            footer({ id: 'footer' })()
+        )
+    )
+);
 ```
