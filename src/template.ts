@@ -61,7 +61,7 @@ export class Template {
                             else if (typeof value == 'function') {
                                 const result: unknown = value();
                                 if (result instanceof Template) {
-                                    // This *was* a `wrap` function that had not been invoked; hence, it doesn't have any children (e.g., <br>).  Add just its `startTag`. 
+                                    // This *was* a `collect` function that had not been invoked; hence, it doesn't have any children (e.g., <br>).  Add just its `startTag`. 
                                     this.addPart(result.startTag);
                                 }
                                 else {
@@ -93,7 +93,7 @@ export class Template {
                     this.addPart(arg);
                 }
                 else if (arg instanceof Template) {
-                    //  This is a Template (i.e., its `wrap` has been called); hence, add its children to the root Template's children.
+                    //  This is a Template (i.e., its `collect` has been called); hence, add its children to the root Template's children.
                     this.addPart(arg.startTag);
                     if (arg.children) {
                         for (const child of arg.children) {
@@ -111,7 +111,7 @@ export class Template {
                 else if (typeof arg == 'function') {
                     const result: unknown = arg();
                     if (result instanceof Template) {
-                        // This *was* a `wrap` function that had not been invoked; hence, it doesn't have any children (e.g., <br>).  Add just its `startTag`. 
+                        // This *was* a `collect` function that had not been invoked; hence, it doesn't have any children (e.g., <br>).  Add just its `startTag`. 
                         this.addPart(result.startTag);
                     }
                     else {
