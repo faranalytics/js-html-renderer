@@ -12,7 +12,9 @@ const template: Template = doctype()(
     html()(
         head()(
             title()('The Title'),
-            script({ 'src': 'script.js' })()
+                    // ⮴ Elements may contain text nodes or other elements.
+            script({ src: 'script.js' })()
+                    // ⮴ Attributes are defined using key-value pairs.
         ),
         body()(
             main({ id: 'main-content' })(
