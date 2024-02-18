@@ -150,7 +150,7 @@ const template: Template = doctype()(
 ## Custom HTML Tags
 Custom HTML tags can be created by binding the name of the tag to the first argument of the Renderer's sigil function.  The resulting HTML tag can be used as a [Custom Element](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements).
 
-### Example
+### How to create a custom HTML tag.
 
 #### Import the Renderer's sigil function for creating custom HTML tags.
 ```ts
