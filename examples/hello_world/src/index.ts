@@ -73,4 +73,4 @@ http.createServer((req: http.IncomingMessage, res: http.ServerResponse) => {
     else {
         res.writeHead(404, '').end();
     }
-}).listen(3000);
+}).listen(3000, '127.0.0.1');
