@@ -60,7 +60,7 @@ import { Template, doctype, html, head, body, main, ul, li } from "js-html-rende
 const $greetings = Symbol('greetings');
 ```
 ### Create an HTML `Template`.
-You will use the Symbol created above in order to designate where dynamic content will be inserted.
+You will use the `Symbol` created above in order to designate where dynamic content will be inserted.
 ```ts
 const template: Template = doctype()(
     html()(
