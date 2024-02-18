@@ -115,7 +115,7 @@ import { $ } from "js-html-renderer";
 ```ts
 const my_custom_element = $.bind(null, 'my-custom-element');
 ```
-### Render the custom element with the class name `custom-element` and the string "Hello, World!" for content and log it to the console.
+### Render the custom element with the class name `custom-element` and content "Hello, World!" and log it to the console.
 ```ts
 console.log(my_custom_element({ class: 'custom-element' })('Hello, World!').render());
 // <my-custom-element class="custom-element">Hello, World!</my-custom-element>
