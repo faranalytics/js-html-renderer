@@ -156,7 +156,7 @@ Custom HTML tags can be created by binding the name of the tag to the first argu
 ```ts
 import { $ } from "js-html-renderer";
 ```
-#### Create a custom HTML element.
+#### Create a custom HTML tag named `my-custom-element`.
 ```ts
 const my_custom_element = $.bind(null, 'my-custom-element');
 ```
