@@ -40,10 +40,10 @@ export class Template {
         }
     }
 
-    public render(symbols?: { [key: symbol]: string | Template | typeof Template.prototype.collect }): string {
+    public render(symbols?: { [key: symbol]: string | Template | symbol | typeof Template.prototype.collect }): string {
         // Rendering involves injection of dyanmic content; hence, the Template must not be mutated.
         if (this.children) {
-            // A copy of `this.children` is made in order to ensure the Template is stateless.
+            // A copy of `this.children` is made in order to ensure the Template is not mutated.
             const children = [...this.children];
             if (symbols) {
                 for (let i = 0; i < children?.length; i++) {
