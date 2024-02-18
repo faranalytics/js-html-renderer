@@ -1,10 +1,10 @@
 import { Template } from "./template";
 
-export function $(name: string, attr?: { [key: string]: string }): typeof Template.prototype.wrap {
+export function $(name: string, attr?: { [key: string]: string }): typeof Template.prototype.collect {
 
     const template: Template = new Template(name, attr);
 
-    return template.wrap.bind(template);
+    return template.collect.bind(template);
 }
 
 export const doctype = $.bind(null, '!DOCTYPE html');

@@ -1,6 +1,8 @@
 import { NotImplementedError } from "./errors";
 import { attributeName, attributeValue, preamble, tagName } from "./regexes";
 
+export type Nodes = Array<string | Template | symbol | typeof Template.prototype.collect | Nodes>;
+
 export class Template {
 
     private startTag: string;
@@ -67,7 +69,8 @@ export class Template {
         }
     }
 
-    public wrap(...args: Array<string | Template | symbol | typeof Template.prototype.wrap | Array<string | Template | symbol | typeof Template.prototype.wrap>>): Template {
+
+    public collect(...args: Nodes): Template {
         if (this.children) {
             args = args.flat();
             for (const arg of args) {
