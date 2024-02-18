@@ -41,7 +41,7 @@ export class Template {
     }
 
     public render(symbols?: { [key: symbol]: string | Template | typeof Template.prototype.collect }): string {
-        // Rendering involved injection of dyanmic content; hence, the Template must not be mutated.
+        // Rendering involves injection of dyanmic content; hence, the Template must not be mutated.
         if (this.children) {
             // A copy of `this.children` is made in order to ensure the Template is stateless.
             const children = [...this.children];
