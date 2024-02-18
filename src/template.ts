@@ -67,7 +67,7 @@ export class Template {
         }
     }
 
-    public wrap(...args: Array<unknown>): Template {
+    public wrap(...args: Array<string | Template | symbol | typeof Template.prototype.wrap | Array<string | Template | symbol | typeof Template.prototype.wrap>>): Template {
         if (this.children) {
             args = args.flat();
             for (const arg of args) {

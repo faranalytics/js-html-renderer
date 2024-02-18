@@ -1,6 +1,6 @@
 import { Template } from "./template";
 
-export function $(name: string, attr?: { [key: string]: string }): (...args: Array<unknown>) => Template {
+export function $(name: string, attr?: { [key: string]: string }): typeof Template.prototype.wrap {
 
     const template: Template = new Template(name, attr);
 
