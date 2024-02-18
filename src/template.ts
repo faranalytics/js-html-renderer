@@ -40,9 +40,9 @@ export class Template {
         }
     }
 
-    public render(symbols?: { [key: symbol]: string | Template }): string {
+    public render(symbols?: { [key: symbol]: string | Template | typeof Template.prototype.collect }): string {
         if (this.children) {
-            // A copy of `this.children` is made in order to ensure it is stateless.
+            // A copy of `this.children` is made in order to ensure the Template is stateless.
             const children = [...this.children];
             if (symbols) {
                 for (let i = 0; i < children?.length; i++) {
@@ -50,12 +50,25 @@ export class Template {
                     if (typeof child == 'symbol') {
                         let value = symbols[child];
                         if (value) {
-                            if (value instanceof Template) {
+                            if (typeof value == 'string') {
+                                children[i] = value;
+                            }
+                            else if (value instanceof Template) {
                                 value = value.render();
                                 children[i] = value;
                             }
-                            else if (typeof value == 'string') {
-                                children[i] = value;
+                            else if (typeof value == 'function') {
+                                const result: unknown = value();
+                                if (result instanceof Template) {
+                                    // This *was* a `wrap` function that had not been invoked; hence, it doesn't have any children (e.g., <br>).  Add just its `startTag`. 
+                                    this.addPart(result.startTag);
+                                }
+                                else {
+                                    throw new NotImplementedError(`The function ${value.toString()} returned an unhandled type.`);
+                                }
+                            }
+                            else {
+                                children[i] = '';
                             }
                         }
                         else {
