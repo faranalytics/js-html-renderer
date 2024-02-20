@@ -7,14 +7,14 @@ Please see the main [README.md](https://github.com/faranalytics/js-html-renderer
 ## Instructions
 Follow the instructions to run the example.
 
-### Clone the Network-Services repo.
+### Clone the JS HTML Renderer repo.
 ```bash
 git clone https://github.com/faranalytics/js-html-renderer.git
 ```
 
 ### Change directory into the relevant example directory.
 ```bash
-cd network-services/examples/hello_world
+cd js-html-renderer/examples/hello_world
 ```
 
 ### Install the example dependencies.
