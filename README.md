@@ -183,7 +183,7 @@ console.log(my_custom_element({ class: 'custom-element' })('Hello, World!').rend
 
 ## "Hello, World!" Example
 
-In this example you will create a multi-lingual Greeter application. You will create an HTTP server that listens on port 3000 and serves dynamic content that contains greetings from around the world.  Please see the [Hello, World!](https://github.com/faranalytics/js-html-renderer/tree/main/examples/hello_world) example for a working implementation.
+In this hypothetical example you will create a multi-lingual Greeter application. You will create an HTTP server that listens on port 3000 and serves dynamic content that contains greetings from around the world.  Please see the [Hello, World!](https://github.com/faranalytics/js-html-renderer/tree/main/examples/hello_world) example for a working implementation.
 
 ### Import Node's native HTTP server, the `Template` type, relevant HTML tags, and a dictionary of "Hello, World!" greetings.
 ```ts
