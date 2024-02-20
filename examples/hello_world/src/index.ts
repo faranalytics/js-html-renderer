@@ -68,7 +68,6 @@ const server = http.createServer((req: http.IncomingMessage, res: http.ServerRes
         );
         res.setHeader('Content-Type', 'text/html; charset=utf-8');
         res.end(htmlText);
-        console.log(htmlText);
     }
     else {
         res.writeHead(404, '').end();
