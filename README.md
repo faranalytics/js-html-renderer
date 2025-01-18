@@ -57,7 +57,7 @@ npm install js-html-renderer
 
 In this example you will create an HTML document that contains greetings in Esperanto and English.
 
-### Instructions
+### Implement the `index.ts` module
 
 #### Import typings and relevant tags.
 
@@ -180,7 +180,7 @@ const template: Template = doctype()(
 
 Custom HTML tags can be created by binding the name of the tag to the first argument of the Renderer's sigil function. The resulting HTML tag can be used as a [Custom Element](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements).
 
-### How to Create a Custom HTML Tag
+### How to create a custom HTML tag
 
 #### Import the Renderer's sigil function for creating custom HTML tags.
 
@@ -212,9 +212,9 @@ console.log(
 
 In this hypothetical example you will create a multi-lingual Greeter application. You will create an HTTP server that listens on port 3000 and serves dynamic content that contains greetings from around the world. Please see the [Hello, World!](https://github.com/faranalytics/js-html-renderer/tree/main/examples/hello_world) example for a working implementation.
 
-### Instructions
+### Implement the `index.ts` module
 
-#### Import the dependecies:
+#### Import the dependecies.
 
 - Node's native HTTP server
 - The `Template` type
