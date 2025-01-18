@@ -43,8 +43,8 @@ const template: Template = doctype()(
 - [Installation](#installation)
 - [Usage](#usage)
 - [Performance](#performance)
-- [Custom HTML Tags](#custom-html-tags)
-- [Hello, World! Example](#hello-world-example)
+- [Custom HTML tags](#custom-html-tags)
+- [Hello, World! example](#hello-world-example)
 - [Support](#support)
 
 ## Installation
